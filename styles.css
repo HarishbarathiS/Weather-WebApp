@@ -1,0 +1,132 @@
+body {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-image: url("https://source.unsplash.com/1600x900/?landscape");
+  font-size: 120%;
+}
+
+.card {
+  display: flex;
+  background: #000000d0;
+  color: white;
+  padding: 1rem;
+  border-radius: 30px;
+  width: 120%;
+  max-width: 420px;
+  margin-right: 50px;
+  margin-bottom: 50px
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  margin: 0.5em;
+  border-radius: 50%;
+  border: none;
+  height: 40px;
+  width: 40px;
+  background: #7c7c7c2b;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+input.search-bar {
+  border: none;
+  outline: none;
+  padding: 0.1em 1em;
+  border-radius: 18px;
+  background: #7c7c7c2b;
+  font-family: inherit;
+  font-size: 100%;
+  color: white;
+  width: 120%;
+}
+
+button:hover {
+  background: #7c7c7c6b;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h2.temp {
+  margin: 0;
+  margin-top: 0.5rem;
+}
+
+img.icon {
+  height: 2.5rem;
+  width: 2.5rem;
+  margin-right: 7px;
+}
+
+.description {
+  text-transform: capitalize;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+p.description {
+  padding-top: 14px;
+}
+
+.weather.loading {
+  visibility: hidden;
+  height: 80px;
+  position: relative;
+}
+
+
+/* the below code will be excecuted until the user gives any input*/
+
+.weather.loading::after {
+  visibility: visible;
+  content: "Weather WebApp 🌤";
+  color: #FFD4B2;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  padding: 0px 40px 50px 100px;
+  font-size: 22px;
+}
+
+.footer {
+  position: absolute;
+  height: 55px;
+  width: 100%;
+  margin: 190px auto 0;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: #CEEDC7;
+  background-color: #000000d0;
+  margin-top: 530px;
+  padding-top: 7px;
+}
+
+
+.social-icon {
+  padding-right: 10px;
+  font-size: 17px;
+}
+
+
+i:hover {
+  color: #ff4c68;
+}
+
+.credits {
+  font-size: 13px;
+}
