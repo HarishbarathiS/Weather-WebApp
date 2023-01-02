@@ -10,7 +10,6 @@ body {
 }
 
 .card {
-  display: flex;
   background: #000000d0;
   color: white;
   padding: 1rem;
